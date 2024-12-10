@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: undefined-coll-571f541f76154643887e90d771efbc6a-depl
+  labels:
+    app: undefined-coll-571f541f76154643887e90d771efbc6a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: undefined-coll-571f541f76154643887e90d771efbc6a
+  template:
+    metadata:
+      labels:
+        app: undefined-coll-571f541f76154643887e90d771efbc6a
+    spec:
+      containers:
+        - name: undefined-coll-571f541f76154643887e90d771efbc6a
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:undefined-coll-571f541f76154643887e90d771efbc6a
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9006

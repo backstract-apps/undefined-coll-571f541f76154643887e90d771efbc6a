@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: undefined-coll-571f541f76154643887e90d771efbc6a-srv
+spec:
+  selector:
+    app: undefined-coll-571f541f76154643887e90d771efbc6a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9006
+  type: ClusterIP
